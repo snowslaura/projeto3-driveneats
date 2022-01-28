@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <title>DrivenEats</title>
+    <link rel="icon" type="image/x-icon" href="./img/Dr.png">
 </head>
 <body>
     <header>
@@ -22,63 +23,34 @@
             <h3 class="titulo_sessao">Primeiro, seu prato</h3>
 
             <div class="comida_somente"> 
-                <section class="food_option" data-identifier="food-option">
+                <section id="pesto"  class="food_option" onclick="escolherPratoPesto()" data-identifier="food-option">
                     <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
+                        <img src="./img/Pesto_com_tomate.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Pesto com tomate</p>
+                        <p class="decricao_produto"> Um pratão daqueles</p>
                         <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
+                <section id="burguer"  class="food_option" onclick="escolherPratoBurguer()" data-identifier="food-option">
                     <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
+                        <img src="./img/burguer-vegano.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Burguer Vegano</p>
+                        <p class="decricao_produto">Feito com amor e grão de bico</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 15,90 </p>
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
+                <section id="salada"  class="food_option" onclick="escolherPratoSalada()" data-identifier="food-option">
                     <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
-                    </div>            
-                </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
-                    </div>            
-                </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
-                    </div>            
-                </section> 
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
-                    </div>            
-                </section> 
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/frango_yin_yang 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 14,90 </p>
+                        <img src="./img/salada_fresca.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Salada Fresca</p>
+                        <p class="decricao_produto">Ingredientes fresquinhos pra você</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 10,90 </p>
                     </div>            
                 </section>               
-            </div>    
+                              
+            </div> 
+
         </section> 
         
         <section  class="comida" data-identifier="drinks">
@@ -86,7 +58,7 @@
             <h3 class="titulo_sessao">Agora, sua bebida</h3>
 
             <div class="comida_somente"> 
-                <section class="food_option" data-identifier="food-option">
+                <section class="food_option" id="coca" onclick="escolherBebidaCoca()" data-identifier="food-option">
                     <div class="imagem_texto">
                         <img src="./img/coquinha_gelada 1.png">
                         <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
@@ -94,54 +66,23 @@
                         <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
+                <section class="food_option" id="suco" data-identifier="food-option" onclick="escolherBebidaSuco()">
                     <div class="imagem_texto">
-                        <img src="./img/coquinha_gelada 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
+                        <img src="./img/suco_laranja.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Suquinho natural</p>
+                        <p class="decricao_produto">Copo 350ml</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 8,90</p>
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
+                <section class="food_option" id="chopp" onclick="escolherBebidaChopp()" data-identifier="food-option">
                     <div class="imagem_texto">
-                        <img src="./img/coquinha_gelada 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
+                        <img src="./img/choppinho.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Choppinho</p>
+                        <p class="decricao_produto">Caneca 300ml</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 7,90</p>
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/coquinha_gelada 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/coquinha_gelada 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section> 
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/coquinha_gelada 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/coquinha_gelada 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section>               
+                             
             </div>    
         </section>  
 
@@ -150,62 +91,32 @@
             <h3 class="titulo_sessao">Por fim, sua sobremesa</h3>
 
             <div class="comida_somente"> 
-                <section class="food_option" data-identifier="food-option">
+                <section class="food_option" id="pudim" onclick="escolherSobremesaPudim()" data-identifier="food-option">
                     <div class="imagem_texto">
                         <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
+                        <p class="titulo_produto" data-identifier="food-title" >Pudim</p>
+                        <p class="decricao_produto">Apenas pudim</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 7,90</p>
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
+                <section class="food_option" id="torta" onclick="escolherSobremesaTorta()" data-identifier="food-option">
                     <div class="imagem_texto">
-                        <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
+                        <img src="./img/torta_caramelo.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Torta de Caramelo</p>
+                        <p class="decricao_produto">Delícia</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 8,90</p>
+                        
                     </div>            
                 </section>
-                <section class="food_option" data-identifier="food-option">
+                <section class="food_option" id="cake" onclick="escolherSobremesaCake()" data-identifier="food-option">
                     <div class="imagem_texto">
-                        <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
+                        <img src="./img/cupcake.jpg">
+                        <p class="titulo_produto" data-identifier="food-title" >Cupcake</p>
+                        <p class="decricao_produto">De chocolate e biscoito</p>
+                        <p class="preco_produto" data-identifier="food-price" >R$ 5,90</p>
                     </div>            
-                </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Coquinha gelada</p>
-                        <p class="decricao_produto">Lata 350ml</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section>
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section> 
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section> 
-                <section class="food_option" data-identifier="food-option">
-                    <div class="imagem_texto">
-                        <img src="./img/pudim 1.png">
-                        <p class="titulo_produto" data-identifier="food-title" >Frango Yin Yang</p>
-                        <p class="decricao_produto">Um pouco de batata, um pouco de salada</p>
-                        <p class="preco_produto" data-identifier="food-price" >R$ 4,90</p>
-                    </div>            
-                </section>               
+                </section>             
+                              
             </div>    
         </section>
     </div>
@@ -215,7 +126,7 @@
                 <h3>para fechar o pedido</h3>             
         </div>
     </footer>
-
-    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"> </script>
 </body>
 </html>

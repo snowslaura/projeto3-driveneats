@@ -1,56 +1,52 @@
-function escolherPratoPesto() {
-    document.getElementById("pesto").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-    document.getElementById("burguer").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("salada").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-   
+
+// let comida = null;
+// let bebida = null;
+// let sobremesa = null;
+
+
+function escolherPrato(idPrato,classePrato){
+    
+    const prato = document.querySelector(classePrato , " .selecionado");
+    
+    if (prato !== null){
+        prato.classList.remove("selecionado");
+    }
+    
+    const pratoSelecionado = document.querySelector(idPrato,classePrato);
+    
+    pratoSelecionado.classList.add("selecionado");
+
+    // comida = pratoSelecionado;     
+
 }
 
-function escolherPratoBurguer() {
-    document.getElementById("pesto").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("burguer").style.boxShadow =   "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F"
-    document.getElementById("salada").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
+function escolherBebida(idBebida,classeBebida){
+
+    const drink = document.querySelector(classeBebida , ' .selecionado');
+        if (drink !== null){
+            drink.classList.remove("selecionado");
+        }
+
+    const bebidaSelecionada = document.querySelector(idBebida,classeBebida);   
+
+    bebidaSelecionada.classList.add("selecionado");
+
+    // bebida = bebidaSelecionada;
+
 }
 
-function escolherPratoSalada() {
-    document.getElementById("pesto").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("burguer").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("salada").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
+function escolherSobremesa(idSobremesa,classeSobremesa){
+
+    const sobre = document.querySelector(classeSobremesa , " .selecionado");
+    
+    if (sobre !== null){
+        sobre.classList.remove("selecionado");
+    }
+    
+    const sobremesaSelecionada = document.querySelector(idSobremesa,classeSobremesa);
+    
+    sobremesaSelecionada.classList.add("selecionado");
+
+    // sobremesa = sobremesaSelecionada;     
 }
 
-function escolherBebidaCoca() {
-    document.getElementById("coca").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-    document.getElementById("suco").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("chopp").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-   
-}
-
-function escolherBebidaSuco(){
-    document.getElementById("coca").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("suco").style.boxShadow =   "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-    document.getElementById("chopp").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-}
-
-function escolherBebidaChopp(){
-    document.getElementById("coca").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("suco").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("chopp").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-}
-
-function escolherSobremesaPudim(){
-    document.getElementById("pudim").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-    document.getElementById("torta").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("cake").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-   
-}
-
-function escolherSobremesaTorta(){
-    document.getElementById("pudim").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("torta").style.boxShadow =   "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-    document.getElementById("cake").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-}
-
-function escolherSobremesaCake(){
-    document.getElementById("pudim").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("torta").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25)";
-    document.getElementById("cake").style.boxShadow = "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
-}

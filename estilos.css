@@ -34,7 +34,16 @@ header {
 
 .conteudo{
     margin-top:92px;
-    margin-bottom:92px;
+    margin-bottom:108px;
+}
+
+.titulo_sessao {
+    font-family: Righteous;
+    font-weight: 400;
+    font-style: normal;
+    font-size:26px;
+    padding: 16px 0;
+    
 }
 
 .comida{
@@ -48,17 +57,6 @@ header {
     justify-content: space-between;
     overflow-x: scroll;
 }
- 
-
-
-.titulo_sessao {
-    font-family: Righteous;
-    font-weight: 400;
-    font-style: normal;
-    font-size:26px;
-    padding: 16px 0;
-    
-}
 
 .food_option{
     display: flex;
@@ -70,6 +68,27 @@ header {
     border-radius: 9px;
     margin-right: 16px;
 }
+
+.food_option ion-icon {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    font-size: 20px;
+    color: #FFF;    
+}
+ 
+.selecionado {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.selecionado ion-icon {
+    color: #51B82E;    
+}
+
+
+
+
+
 
 .imagem_texto{
     display: flex;
@@ -83,14 +102,7 @@ header {
     position: relative;
 }
 
-ion-icon{
-    position: absolute;
-    bottom:0;
-    right: 0;
-    font-size: 20px;
-    color:#51B82E;
-    display:none;
-}
+
 
 .food_option img{
     width: 144px;

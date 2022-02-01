@@ -52,7 +52,17 @@ header {
 }
 
 
-.comida_somente{    
+.comida_somente_prato{    
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.comida_somente_bebida{    
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.comida_somente_sobremesa{    
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;

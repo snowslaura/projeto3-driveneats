@@ -1,52 +1,37 @@
+let prato = null;
+let pratoPreco = null;
+let bebida = null;
+let bebidaPreco = null;
+let sobremesa = null;
+let sobremesaPreco = null;
 
-// let comida = null;
-// let bebida = null;
-// let sobremesa = null;
-
-
-function escolherPrato(idPrato,classePrato){
-    
-    const prato = document.querySelector(classePrato , " .selecionado");
-    
-    if (prato !== null){
-        prato.classList.remove("selecionado");
+function escolherPrato(div,descricao,preco){
+     const pratoSelecionado = document.querySelector('.comida_somente_prato .selecionado');
+    if(pratoSelecionado !== null){
+        pratoSelecionado.classList.remove('selecionado');
     }
-    
-    const pratoSelecionado = document.querySelector(idPrato,classePrato);
-    
-    pratoSelecionado.classList.add("selecionado");
 
-    // comida = pratoSelecionado;     
-
+    div.classList.add('selecionado');
+    prato = descrição;
+    pratoPreco = preco;
 }
 
-function escolherBebida(idBebida,classeBebida){
-
-    const drink = document.querySelector(classeBebida , ' .selecionado');
-        if (drink !== null){
-            drink.classList.remove("selecionado");
-        }
-
-    const bebidaSelecionada = document.querySelector(idBebida,classeBebida);   
-
-    bebidaSelecionada.classList.add("selecionado");
-
-    // bebida = bebidaSelecionada;
-
+function escolherBebida(div,descricao,preco){
+    const bebidaSelecionada = document.querySelector('.comida_somente_bebida .selecionado');
+   if(bebidaSelecionada !== null){
+       bebidaSelecionada.classList.remove('selecionado');
+   }
+   div.classList.add('selecionado');
+   bebida = descrição;
+   pratoPreco = preco;
 }
 
-function escolherSobremesa(idSobremesa,classeSobremesa){
-
-    const sobre = document.querySelector(classeSobremesa , " .selecionado");
-    
-    if (sobre !== null){
-        sobre.classList.remove("selecionado");
-    }
-    
-    const sobremesaSelecionada = document.querySelector(idSobremesa,classeSobremesa);
-    
-    sobremesaSelecionada.classList.add("selecionado");
-
-    // sobremesa = sobremesaSelecionada;     
+function escolherSobremesa(div,descricao,preco){
+    const escolherSobremesa = document.querySelector('.comida_somente_sobremesa .selecionado');
+   if(escolherSobremesa !== null){
+    escolherSobremesa.classList.remove('selecionado');
+   }
+   div.classList.add('selecionado');
+   prato = descrição;
+   pratoPreco = preco;
 }
-
